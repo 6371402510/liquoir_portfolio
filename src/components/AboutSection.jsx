@@ -162,7 +162,7 @@ const AboutSection = ({ isPreview = false }) => {
         </div>
       </section>
       <section className="bg-blue-100 py-10 ">
-        <div className="max-w-7xl h-[60px] mx-auto  grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl h-[80px] mx-auto  grid lg:grid-cols-2 gap-12 items-center">
           <div className='flex items-center gap-4 '>
             <img
               src={mission}
