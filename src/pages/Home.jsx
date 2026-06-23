@@ -5,7 +5,11 @@ import AboutSection from '../components/AboutSection';
 const Home = () => {
   return (
     <main>
+
+      <div className='mt-[40px]'>
       <Hero />
+
+      </div>
 
       
       
