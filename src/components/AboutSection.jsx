@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import bevtrac from "../assets/bevtrac.jpeg";
 import { Link } from "react-router-dom";
+import vision from "../assets/opportunity.png"
+import mission from "../assets/target.png"
 
 const AboutSection = ({ isPreview = false }) => {
   const features = [
@@ -100,29 +102,29 @@ const AboutSection = ({ isPreview = false }) => {
             <p className="text-xs font-semibold uppercase tracking-widest text-[#ec2224] mb-4">
               About Us
             </p>
-   <h2 className="text-4xl md:text-5xl font-medium text-green-600 leading-tight tracking-tight mb-6">
-              
-             Vichaar BevTrac
+            <h2 className="text-4xl md:text-5xl font-medium text-green-600 leading-tight tracking-tight mb-6">
 
-            </h2> 
-            
-              <h2 className="text-4xl md:text-5xl font-medium text-[#003257] leading-tight tracking-tight mb-6">
+              Vichaar BevTrac
+
+            </h2>
+
+            <h2 className="text-4xl md:text-5xl font-medium text-[#003257] leading-tight tracking-tight mb-6">
               Smart Inventory & Accounting for   Odisha IMFL Off Shops
-            
+
             </h2>
 
             <p className="text-blue-700 leading-relaxed text-[20px] mb-8">
-             <b> One Platform. Multiple Stores. Total Control.</b>
+              <b> One Platform. Multiple Stores. Total Control.</b>
             </p>
-         
+
             <p className="text-[#555555] leading-relaxed text-lg mb-8">
-             Vichaar BevTrac is a cloud-based inventory, billing, accounting, and store management solution specially designed for IMFL Off Shops in Odisha. Whether you operate a single retail outlet or multiple licensed stores, BevTrac helps you manage your entire business from one dashboard.
+              Vichaar BevTrac is a cloud-based inventory, billing, accounting, and store management solution specially designed for IMFL Off Shops in Odisha. Whether you operate a single retail outlet or multiple licensed stores, BevTrac helps you manage your entire business from one dashboard.
 
             </p>
             <ul className="space-y-4 mb-8">
               {[
                 'Built specifically for retail liquor shops',
-               
+
                 'Cloud & desktop options available',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -134,9 +136,9 @@ const AboutSection = ({ isPreview = false }) => {
               ))}
             </ul>
 
- <Link
-  to="/contact"
-  className="
+            <Link
+              to="/contact"
+              className="
     bg-[#ec2224]
     text-white
     px-8
@@ -148,30 +150,48 @@ const AboutSection = ({ isPreview = false }) => {
     hover:bg-[#c9191b]
     transition
   "
->
-   Book Free Demo
-  <ArrowRight size={18} />
-</Link>
- 
+            >
+              Book Free Demo
+              <ArrowRight size={18} />
+            </Link>
 
-           
+
+
           </div>
-          
+
         </div>
       </section>
       <section className="bg-blue-100 py-10 ">
-        <div className="max-w-4xl h-[30px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h1   className="text-black text-lg"><b>MISSION:</b></h1>
+        <div className="max-w-7xl h-[60px] mx-auto  grid lg:grid-cols-2 gap-12 items-center">
+          <div className='flex items-center gap-4 '>
+            <img
+              src={mission}
+              alt="Vision"
+              className="w-20 h-20  object-contain  mb-2"
+            />
+            <h1 className="text-black text-lg"><b>MISSION:</b></h1>
             <p className="text-black">To Digitize Odisha's Liquor Retail Industry.</p>
-        </div>
+          </div>
 
-         <div>
-            <h1   className="text-black text-lg"><b>VISION:</b></h1>
-            <p className="text-black">Become the Most Trusted IMFL Retail Software in Odisha</p>
-        </div>
-          
-          
+
+
+           <div className='flex items-center gap-4'>
+            <img
+              src={vision}
+              alt="Vision"
+              className="w-20 h-20 object-contain mb-2"
+            />
+
+            <h1 className="text-black text-lg">
+              <b>VISION:</b>
+            </h1>
+
+            <p className="text-black">
+              Become the Most Trusted IMFL Retail Software in Odisha.
+            </p>
+          </div>
+
+
         </div>
       </section>
 
@@ -180,7 +200,7 @@ const AboutSection = ({ isPreview = false }) => {
       <section className="bg-white py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            
+
             <h2 className="text-4xl md:text-5xl font-medium text-[#003257] leading-tight tracking-tight">
               Everything You Need to Run Your{' '}
               <span className="text-[#ec2224]">Shop Smoothly</span>
@@ -239,7 +259,7 @@ const AboutSection = ({ isPreview = false }) => {
       <section className="bg-[#003257] py-24 px-4">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            
+
             <h2 className="text-4xl md:text-5xl font-medium text-white leading-tight tracking-tight mb-6">
               Why Choose{' '}
               <span className="text-green-600">Vichaar BevTrac</span>
@@ -277,7 +297,7 @@ const AboutSection = ({ isPreview = false }) => {
       <section className="bg-white py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            
+
             <h2 className="text-4xl md:text-5xl font-medium text-[#003257] leading-tight tracking-tight">
               Get Started in <span className="text-[#ec2224]">4 Simple Steps</span>
             </h2>
@@ -320,9 +340,9 @@ const AboutSection = ({ isPreview = false }) => {
             Ready to upgrade your {' '}
             <span className="text-[#ec2224]">liquor shop management?</span>
           </h2>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-           
+
             <a
               href="/contact"
               className="inline-flex items-center justify-center gap-2 bg-transparent border border-white text-white px-8 py-3.5 font-medium hover:bg-white hover:text-[#003257] transition-all"
@@ -330,7 +350,7 @@ const AboutSection = ({ isPreview = false }) => {
               Contact Us
             </a>
           </div>
-          
+
         </div>
       </section>
     </section>
