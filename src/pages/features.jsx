@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import features1 from '../assets/features.jpeg'
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -253,7 +255,7 @@ const Features = () => {
       </section>
 
       {/* All Features Grid Overview */}
-      <section className="bg-[#f2f2f2] py-24 px-4">
+      <section className="bg-[#f2f2f2] py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#ec2224] mb-4">All Features</p>
@@ -293,7 +295,7 @@ const Features = () => {
       </section>
 
       {/* Comparison / Why Section */}
-      <section className="bg-white py-24 px-4">
+      <section className="bg-blue-100 py-4 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -319,9 +321,9 @@ const Features = () => {
                 ))}
               </div>
             </div>
-            <div className="relative">
+            <div className="relative ">
               <img
-                src="https://picsum.photos/seed/replace-tools-dash/700/500.jpg"
+               src={features1}
                 alt="Dashboard preview"
                 className="w-full shadow-2xl grayscale-[10%]"
               />
@@ -344,12 +346,12 @@ const Features = () => {
             Book a free demo and see how all these features work together to simplify your daily operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="inline-block bg-[#ec2224] text-white px-8 py-3.5 font-medium hover:bg-[#c9191b] transition-colors"
-            >
-              Book Free Demo
-            </a>
+           <Link
+  to="/contact"
+  className="inline-block bg-[#ec2224] text-white px-8 py-3.5 font-medium hover:bg-[#c9191b]"
+>
+  Book Free Demo
+</Link>
           <button
   onClick={downloadBrochures}
   className="

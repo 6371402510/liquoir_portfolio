@@ -47,10 +47,10 @@ const Footer = () => {
               </span>
             </Link>
 
-            <p className="text-gray-400 max-w-md mb-6">
-             Vichaar BevTrac helps businesses grow through smart retail solutions. 
-             Join our Partner Program and earn by connecting retailers with 
-             reliable billing, inventory, and management software designed for modern liquor shops.
+            <p className="text-gray-400 text-[20px] max-w-md space-y-8  mb-6">
+            Vichaar BevTrac helps businesses grow through smart retail solutions.
+Join our Partner Program and earn by connecting retailers with reliable billing, inventory, and management software designed for modern liquor shops.
+Empower your network with digital transformation and unlock consistent recurring income opportunities.
             </p>
 
             {/* Social Links (empty for now) */}
@@ -85,25 +85,39 @@ const Footer = () => {
           </div>
 
           {/* Contact Info (FIXED) */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3 text-gray-400">
+          {/* Contact Info (FIXED + MAP) */}
+<div>
+  <h3 className="text-white font-semibold mb-4">Contact</h3>
 
-              <li>
-                <p className="text-sm"> Phone: 9090976411 , 9090972227</p>
-              </li>
-              <li>
-                <p className="text-sm">Email: vichaarlab@gmail.com</p>
-              </li>
+  <ul className="space-y-3 text-gray-400">
+    <li>
+      <p className="text-sm">Phone: 9090976411 , 9090972227</p>
+    </li>
+    <li>
+      <p className="text-sm">Email: vichaarlab@gmail.com</p>
+    </li>
+    <li>
+      <p className="text-sm">
+        Address: Nandan Vihar, Patia, Bhubaneswar – 751024
+      </p>
+    </li>
+  </ul>
 
-              <li>
-                <p className="text-sm">Adress: Nandan Vihar, Patia,
-Bhubaneswar – 751024</p>
-              </li>
-
-            </ul>
-          </div>
-
+  {/* MAP */}
+  <div className="mt-4 rounded-lg overflow-hidden border border-white/10 shadow-lg">
+    <iframe
+      title="Vichaar BevTrac Location"
+     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3740.5225068549953!2d85.82870427523855!3d20.361335381126153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1782212414102!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      width="100%"
+      height="180"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+    
+  </div>
+</div>
         </div>
 
         {/* Bottom */}
