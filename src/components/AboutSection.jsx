@@ -161,39 +161,54 @@ const AboutSection = ({ isPreview = false }) => {
 
         </div>
       </section>
-      <section className="bg-blue-100 py-10 ">
-        <div className="max-w-7xl h-[80px] mx-auto  grid lg:grid-cols-2 gap-12 items-center">
-          <div className='flex items-center gap-4 '>
-            <img
-              src={mission}
-              alt="Vision"
-              className="w-20 h-20  object-contain  mb-2"
-            />
-            <h1 className="text-black text-lg"><b>MISSION:</b></h1>
-            <p className="text-black">To Digitize Odisha's Liquor Retail Industry.</p>
-          </div>
-
-
-
-           <div className='flex items-center gap-4'>
-            <img
-              src={vision}
-              alt="Vision"
-              className="w-20 h-20 object-contain mb-2"
-            />
-
-            <h1 className="text-black text-lg">
-              <b>VISION:</b>
-            </h1>
-
-            <p className="text-black">
-              Become the Most Trusted IMFL Retail Software in Odisha.
-            </p>
-          </div>
-
-
+      <section className="bg-blue-100 py-8 sm:py-10 lg:py-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8">
+      
+      {/* Mission Card */}
+      <div className="flex items-start sm:items-center gap-4 bg-white rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-blue-100">
+        <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-blue-50 rounded-xl flex items-center justify-center">
+          <img
+            src={mission}
+            alt="Mission"
+            className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
+          />
         </div>
-      </section>
+        <div className="min-w-0">
+          <h2 className="text-blue-900 text-lg sm:text-xl font-bold mb-1.5 flex items-center gap-2">
+            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+            MISSION
+          </h2>
+          <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+            To Digitize Odisha's Liquor Retail Industry.
+          </p>
+        </div>
+      </div>
+
+      {/* Vision Card */}
+      <div className="flex items-start sm:items-center gap-4 bg-white rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-blue-100">
+        <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-blue-50 rounded-xl flex items-center justify-center">
+          <img
+            src={vision}
+            alt="Vision"
+            className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
+          />
+        </div>
+        <div className="min-w-0">
+          <h2 className="text-blue-900 text-lg sm:text-xl font-bold mb-1.5 flex items-center gap-2">
+            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+            VISION
+          </h2>
+          <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+            Become the Most Trusted IMFL Retail Software in Odisha.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
       {/* ──────────── Features ──────────── */}

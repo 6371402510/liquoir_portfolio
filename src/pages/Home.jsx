@@ -1,19 +1,16 @@
 import Hero from '../components/Hero';
 import AboutSection from '../components/AboutSection';
 
-
 const Home = () => {
   return (
-    <main>
+    <main className="w-full">
 
-      <div className='mt-[40px]'>
-      <Hero />
-
+      {/* navbar height space */}
+      <div className="pt-[80px]">
+        <Hero />
       </div>
-<AboutSection />
-      
 
-    
+      <AboutSection />
 
     </main>
   );

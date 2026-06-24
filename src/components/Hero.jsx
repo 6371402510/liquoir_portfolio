@@ -1,15 +1,24 @@
-import bg from "../assets/hero2.png";
+import desktopBg from "../assets/hero2.png";
+import mobileBg from "../assets/hero-mobile.jpeg";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-black flex items-center justify-center">
+    <section className="w-full h-[calc(100vh-80px)] bg-black flex items-center justify-center">
 
-      <div
-        className="w-full h-full bg-contain bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${bg})`,
-        }}
-      />
+      <picture className="block w-full h-full">
+
+        <source
+          media="(max-width: 640px)"
+          srcSet={mobileBg}
+        />
+
+        <img
+          src={desktopBg}
+          className="w-full h-full object-contain"
+          alt="hero"
+        />
+
+      </picture>
 
     </section>
   );
